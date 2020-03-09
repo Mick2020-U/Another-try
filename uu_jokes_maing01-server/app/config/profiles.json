@@ -1,6 +1,6 @@
 {
   "{asid}": {
-    "profileList": ["AsidOwner"],
+    "profileList": ["AsidOwner","Public"],
     "permissionMap": {
       "{asidOwner}": ["AsidOwner"]
     },
@@ -8,10 +8,11 @@
     }
   },
   "*": {
-    "profileList": ["Authorities", "Executives", "AwidOwner"],
+    "profileList": ["Authorities","Executives","AwidOwner"],
     "useCaseMap": {
       "init": ["AwidOwner"],
-      "defaultUve": ["Public"]
+      "defaultUve": ["Public"],
+      "joke/create": ["Executives","Readers","Authorities"]
     }
   }
 }
